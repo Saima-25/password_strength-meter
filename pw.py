@@ -28,7 +28,7 @@ def check_pw_strength(password):
     if re.search(r"[A-Z]", password) and re.search(r"[a-z]", password ):
         score += 1
     else:
-        st.error(" ❌ Password should contain oth upper and lower case.")
+        st.error(" ❌ Password should contain both upper and lower case.")
         
     if re.search(r"\d", password):
         score += 1
